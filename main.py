@@ -1,6 +1,3 @@
-#Mybe add gui (make it look batter ??? )
-
-
 import requests
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos
