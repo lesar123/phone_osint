@@ -7,9 +7,9 @@ from fpdf.enums import XPos, YPos
 from serpapi import GoogleSearch
 
 # Replace these with your API keys
-NUMVERIFY_API_KEY = "5a5fd1c0b652cc08ac08f1ee91b2d6e9"
+NUMVERIFY_API_KEY = ""
 NUMVERIFY_BASE_URL = "http://apilayer.net/api/validate"
-SERPAPI_KEY = "f17fef540a0df69104546a4184eb4bdae0ead66639fe9cdce0f423ad1b27972f"
+SERPAPI_KEY = ""
 
 
 class SearchSnapchatMentions:
