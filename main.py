@@ -15,7 +15,7 @@ class SearchSnapchatMentions:
         self.results = {"phone_number": phone_number, "snapchat_mentions": [], "additional_info": []}
 
     def search_snap_mentions(self):
-        """Search for Snapchat mentions of the provided phone number."""
+        #Search for Snapchat mentions of the provided phone number.
         try:
             print("[*] Searching for Snapchat mentions on Google...")
 
