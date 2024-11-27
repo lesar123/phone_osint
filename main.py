@@ -57,8 +57,8 @@ class SearchSnapchatMentions:
         # Add a Unicode-compatible font (remove uni=True as it is deprecated)
         try:
             # Register DejaVuSans Regular and Bold versions explicitly
-            pdf.add_font('DejaVu', '', '/home/doc123/Downloads/dejavu-sans/DejaVuSans.ttf')  # Regular
-            pdf.add_font('DejaVu', 'B', '/home/doc123/Downloads/dejavu-sans/DejaVuSans-Bold.ttf')  # Bold
+            pdf.add_font('DejaVu', '', '')  # Regular
+            pdf.add_font('DejaVu', 'B', '')  # Bold
             pdf.set_font("DejaVu", size=12)
         except Exception as e:
             print(f"[!] Error setting font: {e}")
@@ -94,7 +94,7 @@ class SearchSnapchatMentions:
         print("[+] Report saved as enhanced_snapchat_mentions_report.pdf.")
 
     def run(self):
-        """Run the enhanced Snapchat mentions OSINT process."""
+        #Run the enhanced Snapchat mentions OSINT process.
         self.search_snap_mentions()
         self.generate_report()
 
@@ -106,7 +106,7 @@ class PhoneNumberOSINT:
         self.results = {"phone_number": phone_number}
 
     def fetch_numverify_data(self):
-        """Fetch basic info about the phone number from Numverify API."""
+        #Fetch basic info about the phone number from Numverify API.
         try:
             print("[*] Fetching Numverify data...")
             url = f"{NUMVERIFY_BASE_URL}?access_key={NUMVERIFY_API_KEY}&number={self.phone_number}"
@@ -132,7 +132,7 @@ class PhoneNumberOSINT:
             print(f"[!] Error fetching Numverify data: {e}")
 
     def search_google_mentions(self):
-        """Search Google for mentions of the phone number on social media platforms."""
+        #Search Google for mentions of the phone number on social media platforms.
         try:
             print("[*] Searching Google for mentions on social media...")
 
