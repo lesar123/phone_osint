@@ -48,7 +48,7 @@ class SearchSnapchatMentions:
 
 
     def generate_report(self):
-        """Generate a detailed PDF report of the findings with Unicode support."""
+        #Generate a detailed PDF report of the findings with Unicode support.
         print("[*] Generating detailed Snapchat mentions report...")
 
         pdf = FPDF()
